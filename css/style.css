@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    /* outline: 1px solid salmon; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+}
+
+.up{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up input {
+    font-size: 24px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: aliceblue;
+    color: darkslategrey
+}
+
+.middle {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+.middle > .bigbox {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: .2rem 0;
+}
+
+.middle input {
+    width: 50px;
+    height: 25px;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+    text-align: center;
+    color: salmon;
+    margin: 0 0.1rem;
+}
+
+.notebox:valid {
+    background-color: white;
+}
+
+.middle .box {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    margin: 0 0.1rem;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom h3 {
+    margin: .5rem 0;
+}
+
+#lyrics{
+    outline: none;
+    border: none;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 2px 15px slategray;    
+    border-radius: 15px;
+    text-align: center;
+}
+
+.go {
+     background-color: darkslategray;
+     color: aliceblue;
+     padding: 1rem;
+     width: 10rem;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     transition: .4s ease-in-out;
+     margin-right: 1rem;
+}
+
+.go:hover{
+    color: darkslategray;
+    background-color: aliceblue;
+    box-shadow: 0 0 15px slategray;
+}
+
+.reset {
+    background-color: salmon;
+}
+
+.reset:hover{
+    color: salmon;
+    background-color: aliceblue;
+    box-shadow: 0 0 15px salmon;
+}
+
+.wait {
+    padding: 0;
+}
